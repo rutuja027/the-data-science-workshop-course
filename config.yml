@@ -1,0 +1,18 @@
+title: The-Data-Science-Workshop
+description: >-
+  This course is suggested for individuals who have basic knowledge of Python
+  and are willing to begin their journey as Data Scientist.
+template:
+  repo: the-data-science-workshop-template
+  name: the-data-science-workshop
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
